@@ -1,0 +1,89 @@
+.portfolio {
+  overflow: hidden;
+  padding-top: 2rem;
+}
+
+.portfolio__title {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  span {
+    display: none;
+  }
+}
+
+.portfolio__subtitle {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-align: center;
+  line-height: pxToRem(28px);
+}
+
+//<<<<<<<<<<<<<<<<< GALLERY >>>>>>>>>>>>>>>>
+.portfolio__gallery-container {
+  position: relative;
+}
+
+.portfolio__gallery-tabs {
+  display: flex;
+}
+
+.portfolio__gallery-tab {
+  background-color: #38373e;
+  color: #fff;
+  font-family: FuturaD;
+  font-size: pxToRem(15px);
+  text-transform: uppercase;
+  width: 50%;
+  padding: .66rem 0;
+  text-align: center;
+  span {
+    opacity: .5;
+  }
+}
+
+.active-tab {
+  background-color: #fa5b3c;
+  span {
+    opacity: 1;
+  }
+}
+
+.portfolio__gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__gallery-item {
+  width: 49.8%;
+  margin-bottom: .1rem;
+  &:nth-of-type(n + 5) {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio__slider-count {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  font-weight: bold;
+}
+
+.portfolio__slider-sum {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .5;
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+}
+//<<<<<<<<<<<<<<<<< END GALLERY >>>>>>>>>>>>>>>>
