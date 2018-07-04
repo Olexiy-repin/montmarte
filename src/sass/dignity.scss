@@ -1,0 +1,130 @@
+.dignity {
+  padding-top: 4.2rem;
+  overflow: hidden;
+}
+
+.dignity__title {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: pxToRem(30px);
+  margin-bottom: 1.9rem;
+}
+
+.video-col {
+  padding: 0;
+  margin-bottom: 2.4rem;
+  iframe {
+    height: 234px;
+  }
+}
+
+.dignity__video {
+  height: 234px;
+}
+
+.left-list__title {
+  font-family: FuturaF;
+  font-size: pxToRem(22px);
+  color: #38373e;
+  line-height: pxToRem(28px);
+  margin-bottom: 1.2rem;
+}
+
+.left-list__item {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  line-height: pxToRem(23px);
+  color: #38373e;
+  margin-bottom: .8rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  span {
+    font-family: FuturaF;
+  }
+}
+
+.statistic-col {
+  margin-top: 1.8rem;
+  padding: 0;
+}
+
+.statistics-block__one {
+  display: flex;
+  justify-content: space-between;
+  background-color: #38373e;
+  min-height: pxToRem(169px);
+  padding: 3rem 2rem 0 2rem;
+}
+
+.statistics__block-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  min-height: pxToRem(146px);
+  .statistics-block-text {
+    color: #38373e;
+  }
+}
+
+.statistics-block-text {
+  color: #fff;
+  font-family: FuturaF;
+  font-size: pxToRem(36px);
+  span {
+    display: block;
+    font-size: pxToRem(15px);
+    padding-left: .7rem;
+  }
+}
+
+//<<<<<<<<<<<<<<<<< BOTTOM LIST >>>>>>>>>>>>>>>>
+.dignity__list-block {
+  margin-top: 3rem;
+}
+
+.dignity__bottom-list-title {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  line-height: pxToRem(28px);
+  color: #38373e;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 2.1rem;
+}
+
+.dignity__bottom-list {
+  list-style: none;
+}
+
+.dignity__bottom-list-item {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  line-height: pxToRem(23px);
+  margin-bottom: 1.2rem;
+  position: relative;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  span {
+    font-family: FuturaF;
+    color: #38373e;
+  }
+  &::before {
+    counter-increment: number;
+    display: block;
+    content: "0" counter(number);
+    position: absolute;
+    left: -.9rem;
+    top: -.5rem;
+    color: #38373e;
+    font-family: FuturaF;
+    opacity: .1;
+    font-size: pxToRem(36px);
+  }
+}
+//<<<<<<<<<<<<<<<<< END BOTTOM LIST >>>>>>>>>>>>>>>>
