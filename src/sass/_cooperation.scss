@@ -43,7 +43,7 @@
 
 //<<<<<<<<<<<<<<<<< SLIDER >>>>>>>>>>>>>>>>
 .cooperation__image-container {
-  width: 320px;
+  width: 100%;
   height: auto;
 }
 
@@ -64,7 +64,7 @@
   right: 0;
   display: block;
   content: "";
-  width: pxToRem(85px);
+  width: 27%;
   height: pxToRem(65px);
   background-color: #38373e;
   color: #fff;

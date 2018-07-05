@@ -1,0 +1,22 @@
+.partners {
+  padding-top: 2.7rem;
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+  .row [class*=col-]:first-of-type {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.partners__title {
+  font-family: FuturaF;
+  font-size: pxToRem(22px);
+  color: #38373e;
+  text-align: center;
+}
+
+.partners__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 .5rem;
+}

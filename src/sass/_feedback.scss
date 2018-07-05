@@ -1,0 +1,42 @@
+.feedback {
+  background-image: url('img/cooperation/cooperation-bg.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 3.6rem;
+  padding-bottom: 4.3rem;
+}
+
+.feedback__form-title {
+  font-family: FuturaF;
+  font-size: pxToRem(22px);
+  color: #38373e;
+  line-height: pxToRem(28px);
+  text-align: center;
+  margin-bottom: 2.1rem;
+}
+
+.feedback__form-input-container {
+  padding: 0 1.7rem;
+  margin-bottom: 1.7rem;
+}
+
+.feedback {
+  .main-screen__form-input {
+    color: #38373e;
+    border-bottom: 1px solid #38373e;
+    margin-bottom: 3rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .main-screen__form-btn {
+    width: 14.7rem;
+    margin: auto;
+  }
+  ::-webkit-input-placeholder {font-family:FuturaF;font-size:pxToRem(15px);color:#38373e;}
+  ::-moz-placeholder          {font-family:FuturaF;font-size:pxToRem(15px);color:#38373e;}/* Firefox 19+ */
+  :-moz-placeholder           {font-family:FuturaF;font-size:pxToRem(15px);color:#38373e;}/* Firefox 18- */
+  :-ms-input-placeholder      {font-family:FuturaF;font-size:pxToRem(15px);color:#38373e;}
+}

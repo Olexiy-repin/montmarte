@@ -1,6 +1,7 @@
 .portfolio {
   overflow: hidden;
-  padding-top: 2rem;
+  padding-top: 4.6rem;
+  padding-bottom: 3.5rem;
 }
 
 .portfolio__title {
@@ -21,6 +22,11 @@
   color: #38373e;
   text-align: center;
   line-height: pxToRem(28px);
+  margin-bottom: 1.9rem;
+}
+
+.portfolio__slider-container {
+  position: relative;
 }
 
 //<<<<<<<<<<<<<<<<< GALLERY >>>>>>>>>>>>>>>>
@@ -53,6 +59,10 @@
   }
 }
 
+.active-nav {
+  fill: #fa5b3c!important;
+}
+
 .portfolio__gallery-items {
   display: flex;
   flex-wrap: wrap;
@@ -69,8 +79,8 @@
 
 .portfolio__slider-count {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 26.2rem;
+  left: .9rem;
   font-family: FuturaL;
   font-size: pxToRem(15px);
   color: #38373e;
@@ -79,11 +89,93 @@
 
 .portfolio__slider-sum {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 26.2rem;
+  right: 1.6rem;
   opacity: .5;
   font-family: FuturaL;
   font-size: pxToRem(15px);
   color: #38373e;
 }
+
+.portfolio__gallery-img {
+  height: 115px !important;
+}
 //<<<<<<<<<<<<<<<<< END GALLERY >>>>>>>>>>>>>>>>
+
+//<<<<<<<<<<<<<<<<< PROJECT BLOCK >>>>>>>>>>>>>>>>
+.gallery-col {
+  margin-bottom: 8.4rem;
+}
+
+.portfolio__project-title {
+  font-family: FuturaF;
+  font-size: pxToRem(36px);
+  color: #38373e;
+  margin-bottom: 1.1rem;
+}
+
+.portfolio__project-data {
+  margin-bottom: 1.6rem;
+}
+
+.portfolio__data-item {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  margin-bottom: .3rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  span {
+    font-family: FuturaF;
+  }
+}
+
+.portfolio__project-description {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  line-height: pxToRem(23px);
+}
+
+.portfolio__project-container {
+  padding: 0 0 0 .5rem;
+}
+//<<<<<<<<<<<<<<<<< END PROJECT BLOCK >>>>>>>>>>>>>>>>
+.prtfolio__comment-container {
+  padding-left: .6rem;
+}
+
+.portfolio__comment-ava-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.portfolio__comment-img-container {
+  margin-right: .6rem;
+}
+
+.portfolio__comment-ava-name {
+  font-family: FuturaF;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  margin-bottom: .2rem;
+}
+
+.portfolio__comment-ava-comment {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+}
+
+.portfolio__comment-text {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  line-height: pxToRem(23px);
+}
+
+.project-col {
+  margin-bottom: 2.4rem;
+}

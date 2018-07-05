@@ -1,0 +1,35 @@
+.discounts {
+  padding-top: 5.8rem;
+  padding-bottom: 5.7rem;
+  overflow: hidden;
+  background-image: url("img/discounts/discounts-bg.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .row {
+    padding-left: .7rem;
+    [class*=col-]:first-of-type {
+      margin-bottom: 2.4rem;
+    }
+  }
+  .slides {
+    width: 221px;
+    height: 276px;
+  }
+}
+
+.discounts__title {
+  font-family: FuturaF;
+  font-size: pxToRem(31px);
+  line-height: pxToRem(45px);
+  color: #38373e;
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+.discounts__subtitle {
+  font-family: FuturaF;
+  font-size: pxToRem(22px);
+  line-height: pxToRem(28px);
+  color: #38373e;
+}

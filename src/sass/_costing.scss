@@ -1,0 +1,64 @@
+.costing {
+  padding-top: 5.6rem;
+}
+
+.costing__title {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.costin__subtitle {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-align: center;
+  line-height: pxToRem(28px);
+  padding: 0 .4rem;
+  margin-bottom: 1.6rem;
+}
+
+//<<<<<<<<<<<<<<<<< COSTING CARDS >>>>>>>>>>>>>>>>
+.costing__card {
+   padding: 2.1rem 0 2.1rem .6rem;
+}
+
+.costing__card-title {
+  font-family: FuturaF;
+  font-size: pxToRem(22px);
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.costing__cart-text {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #fff;
+  line-height: pxToRem(20px);
+}
+
+.costing__card:first-of-type {
+  background-color: #dddde1;
+  .costing__card-title {
+    color: #38373e;
+  }
+  .costing__cart-text {
+    color: #38373e;
+  }
+}
+
+.costing__card:nth-of-type(2) {
+  background-color: #74737b;
+}
+
+.costing__card:nth-of-type(3) {
+  background-color: #545358;
+}
+
+.costing__card:last-of-type {
+  background-color: #38373e;
+}
+//<<<<<<<<<<<<<<<<< END COSTING CARDS >>>>>>>>>>>>>>>>

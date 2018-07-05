@@ -1,0 +1,75 @@
+.plaster-type {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.plaster-type__title {
+  font-family: FuturaF;
+  font-size: pxToRem(31px);
+  color: #38373e;
+  text-transform: uppercase;
+  line-height: pxToRem(45px);
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.plaster-type__description {
+  text-align: center;
+  font-family: FuturaF;
+  font-size: pxToRem(22px);
+  color: #38373e;
+  line-height: pxToRem(28px);
+  padding: 0 1.6rem;
+}
+
+.plaster-type__card {
+  margin-top: 0;
+  &:nth-of-type(n+3) {
+    margin-top: 4.7rem;
+  }
+  &:nth-of-type(n+4) {
+    display: none;
+  }
+}
+
+.plaster-type__title-card {
+  margin-bottom: 2.5rem;
+}
+
+.plaster-type__img-container {
+  margin-bottom: 1.6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.plaster-type__card-title {
+  font-family: FuturaF;
+  font-size: pxToRem(36px);
+  color: #38373e;
+  padding-left: .7rem;
+  margin-bottom: 1rem;
+}
+
+.plaster-type__card-description {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  line-height: pxToRem(23px);
+  padding-left: .7rem;
+  padding-right: .4rem;
+}
+
+.plaster-type__more-btn {
+  display: inline-block;
+  font-family: FuturaD;
+  font-size: pxToRem(15px);
+  padding: .8rem 0;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fa5b3c;
+  width: 100%;
+  margin-top: 1.8rem;
+}

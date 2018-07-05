@@ -1,0 +1,139 @@
+.location {
+  padding-top: 4.9rem;
+  overflow: hidden;
+}
+
+.location__title {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.location__subtitle {
+  font-family: FuturaF;
+  font-size: pxToRem(20px);
+  color: #38373e;
+  text-align: center;
+  line-height: pxToRem(24px);
+  padding: 0 .5rem;
+  margin-bottom: 1.2rem;
+}
+
+// LEFT SIDE
+.location__left-container {
+  padding: 0 .7rem;
+}
+
+.location__left-text {
+  font-family: FuturaL;
+  font-size: pxToRem(15px);
+  color: #38373e;
+  line-height: pxToRem(23px);
+  margin-bottom: .9rem;
+}
+
+.location__left-geolocation {
+  margin-bottom: 1.2rem;
+}
+
+.location__left-geolocation-text {
+  font-family: FuturaF;
+  font-size: pxToRem(13px);
+  color: #38373e;
+  line-height: pxToRem(21px);
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 1.9rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: url("img/location/geo.png");
+  }
+}
+
+.location__left-social {
+  font-family: FuturaF;
+  font-size: pxToRem(13px);
+  color: #38373e;
+  line-height: pxToRem(19px);
+  position: relative;
+  padding-left: 1.9rem;
+  margin-bottom: .8rem;
+  &:first-of-type {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: url("img/location/mail.png");
+    }
+  }
+  &:nth-of-type(2) {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: url("img/location/insta.png");
+    }
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: url("img/location/facebook.png");
+    }
+  }
+}
+// END LEFT SIDE
+
+// MAP
+.map-col {
+  margin-top: 2.2rem;
+}
+
+.location__map {
+  display: flex;
+  iframe {
+    width: 100%;
+    height: 336px;
+  }
+}
+
+.location__map-tabs {
+  display: flex;
+}
+
+.location__map-tab {
+  background-color: #38373e;
+  color: #fff;
+  font-family: FuturaD;
+  font-size: pxToRem(15px);
+  text-transform: uppercase;
+  width: 50%;
+  padding: .66rem 0;
+  text-align: center;
+  span {
+    opacity: .5;
+  }
+}
+
+.active-tab {
+  background-color: #fa5b3c;
+  span {
+    opacity: 1;
+  }
+}
+
+// END MAP

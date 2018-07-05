@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: pxToRem(235px)!important;
+    width: 73%!important;
     height: pxToRem(65px)!important;
     background-color: #e6e6e6;
   }
@@ -21,11 +21,14 @@
 
 .portfolio {
   .owl-dots {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1rem;
+    top: 25.7rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .owl-dot {
@@ -35,5 +38,28 @@
     &.active {
       background-color: #363636;
     }
+  }
+
+  .owl-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 29.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    div {
+      width: 1.5rem;
+      height: 1.5rem;
+      fill:  #38373e;
+      &:hover {
+        fill: #fa5b3c;
+      }
+    }
+  }
+
+  .owl-prev {
+    margin-right: 3.3rem;
+
   }
 }
