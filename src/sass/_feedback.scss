@@ -40,3 +40,61 @@
   :-moz-placeholder           {font-family:FuturaF;font-size:pxToRem(15px);color:#38373e;}/* Firefox 18- */
   :-ms-input-placeholder      {font-family:FuturaF;font-size:pxToRem(15px);color:#38373e;}
 }
+
+@media (min-width: 768px) {
+  .portfolio+.feedabeck {
+    margin-top: -.4rem;
+  }
+
+  .feedback-02 {
+    .feedback__form-title {
+      padding: 0 4rem;
+    }
+  }
+
+  .feedback {
+    padding-top: 4.6rem;
+    padding-bottom: 2.3rem;
+  }
+
+  .feedback__form-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .feedback .main-screen__form-input {
+    width: pxToRem(235px);
+    margin-bottom: 0;
+  }
+
+  .feedback .main-screen__form-btn {
+    margin: 0;
+    width: pxToRem(235px);
+  }
+
+  .feedback__form-title {
+    margin-bottom: 2.8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback .form-container {
+    padding: 0 12.1rem;
+  }
+
+  .feedback-02 {
+    padding-bottom: 0;
+  }
+
+  .feedback .main-screen__form-input {
+    width: pxToRem(207px);
+    margin-bottom: 0;
+  }
+
+  .feedback .main-screen__form-btn {
+    margin: 0;
+    width: pxToRem(207px);
+  }
+}

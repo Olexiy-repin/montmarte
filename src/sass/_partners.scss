@@ -20,3 +20,44 @@
   justify-content: space-between;
   padding: 0 .5rem;
 }
+
+@media (max-width: 1199px) {
+  .partners__card {
+    &:last-of-type {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .partners {
+    order: -1;
+    padding-top: 2.9rem;
+  }
+
+  .partners__title {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
+  .partners__cards {
+    padding: 0 .7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .partners {
+    padding-top: 2.6rem;
+    .row [class*=col-]:first-of-type {
+      padding-right: 0;
+    }
+  }
+
+  .partners__title {
+    padding-left: 7rem;
+  }
+
+  .partners__cards {
+    padding: 0 7.1rem 0 3.3rem;
+  }
+}

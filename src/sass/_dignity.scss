@@ -136,3 +136,166 @@
   }
 }
 //<<<<<<<<<<<<<<<<< END BOTTOM LIST >>>>>>>>>>>>>>>>
+
+@media (min-width: 768px) {
+  .dignity {
+    padding-top: 5.7rem;
+  }
+
+  .dignity__title {
+    font-size: pxToRem(31px);
+    line-height: pxToRem(56px);
+    margin-bottom: 1.2rem;
+  }
+
+  .dignity__title-span {
+    display: block;
+    font-size: pxToRem(56px);
+  }
+
+  .video-col {
+    iframe {
+      height: 514px;
+    }
+  }
+
+  .dignity__video-container {
+    height: 514px;
+    padding: 0 1.3rem;
+  }
+
+  .dignity__left-col {
+    padding-right: 0;
+  }
+
+  .dignity__left-list-container {
+    padding-left: 2.8rem;
+  }
+
+  .left-list__item {
+    position: relative;
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: .6rem;
+      left: -3rem;
+      width: 30px;
+      border: 1px solid #2d2d2d;
+    }
+  }
+
+  .statistic-col {
+    margin-top: 0;
+    padding: 0 15px;
+  }
+
+  .dignity__statistics-block {
+    padding-left: 1rem;
+  }
+
+  .statistics__block-two {
+    border: 1px solid #000;
+  }
+
+  .dignity__list-block {
+    margin-top: 2.9rem;
+  }
+
+  .dignity__bottom-list-title {
+    font-size: pxToRem(22px);
+    margin-bottom: 0;
+  }
+
+  .dignity__bottom-list {
+    columns: 2;
+    padding-left: 2.5rem;
+  }
+
+  .dignity__bottom-list-item {
+    padding-right: 1.5rem;
+    &::before {
+      left: -1.3rem;
+    }
+    &:first-of-type {
+      padding-top: 2rem;
+      &::before {
+        top: 1.5rem;
+      }
+    }
+    &:nth-of-type(4) {
+      padding-top: 2rem;
+      &::before {
+        top: 1.5rem;
+      }
+    }
+    &:nth-of-type(n+4) {
+      &::before {
+        left: .2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .dignity {
+    padding-top: 7.5rem;
+  }
+
+  .dignity__left-col {
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .dignity__top-left-col {
+    padding: 0;
+
+  }
+
+  .video-col {
+    order: 2;
+  }
+
+  .dignity__title {
+    margin-bottom: 3rem;
+  }
+
+  .dignity__left-list-container {
+    padding-left: .9rem;
+    padding-top: 0.4rem;
+    padding-right: 3.3rem;
+  }
+
+  .left-list__title {
+    margin-bottom: 1.3rem;
+  }
+
+  .statistics-block__one {
+    width: 24rem;
+    padding: 3rem 4.7rem 0 2rem;
+  }
+
+  .dignity__statistics-block {
+    padding-left: 0;
+  }
+
+  .statistics__block-two {
+    width: 13rem;
+    height: 19.2rem;
+  }
+
+  .dignity__list-block {
+    margin-top: -15.2rem;
+    width: 42.8rem;
+    margin-left: auto;
+  }
+
+  .dignity__bottom-list-item {
+    padding-right: 1rem;
+  }
+
+  .dignity__video-container {
+    padding: 0;
+    padding-left: .9rem;
+  }
+}

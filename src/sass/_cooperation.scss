@@ -32,13 +32,6 @@
   color: #38373e;
   line-height: 28px;
 }
-
-// .cooperation__subtitle br {
-//   content: "";
-//   &::after {
-//     content: "\00a0";
-//   }
-// }
 //<<<<<<<<<<<<<<<<< END TOP CONTENT >>>>>>>>>>>>>>>>
 
 //<<<<<<<<<<<<<<<<< SLIDER >>>>>>>>>>>>>>>>
@@ -55,7 +48,6 @@
 
 .cooperation__slider-container {
   position: relative;
-  margin-bottom: 7.1rem;
 }
 
 .cooperation__slider-count {
@@ -123,3 +115,123 @@
   padding: 0 .8rem;
 }
 //<<<<<<<<<<<<<<<<< END COOPERATION CARD >>>>>>>>>>>>>>>>
+
+@media (min-width: 768px) {
+  .cooperation {
+    padding-top: 7.4rem;
+    padding-bottom: 1.7rem;
+    .row:first-of-type {
+      margin-bottom: 2.8rem;
+    }
+
+    .row:last-of-type [class*=col-]:first-of-type {
+      max-width: 46.8%;
+      padding-right: 0;
+    }
+
+    .row:last-of-type [class*=col-]:last-of-type {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  //<<<<<<<<<<<<<<<<< TOP CONTENT >>>>>>>>>>>>>>>>
+  .cooperation__title {
+    font-size: pxToRem(31px);
+    line-height: pxToRem(45px);
+    margin-bottom: 2rem;
+    br {
+      content: "";
+      &::after {
+        content: "\00a0";
+      }
+    }
+  }
+
+  .cooperation__subtitle {
+    font-size: pxToRem(22px);
+    letter-spacing: .2px;
+  }
+
+  //<<<<<<<<<<<<<<<<< END TOP CONTENT >>>>>>>>>>>>>>>>
+
+  //<<<<<<<<<<<<<<<<< SLIDER >>>>>>>>>>>>>>>>
+  .cooperation__slider-container {
+    width: 350px;
+    margin-bottom: 0;
+  }
+  //<<<<<<<<<<<<<<<<< END SLIDER >>>>>>>>>>>>>>>>
+
+  //<<<<<<<<<<<<<<<<< COOPERATION CARD >>>>>>>>>>>>>>>>
+  .cooperation__card-text {
+    margin-bottom: 1.1rem;
+  }
+
+  .cooperation__card {
+    margin-bottom: 2.9rem;
+    padding: 0 0 0 .8rem;
+  }
+
+  .cooperation__card-btn {
+    margin: 0;
+  }
+
+  .cooperation__image-container {
+    height: 493px;
+  }
+
+  .cooperation__picture {
+    display: block;
+    overflow: hidden;
+    height: auto;
+    img {
+      height: auto;
+    }
+  }
+  //<<<<<<<<<<<<<<<<< END COOPERATION CARD >>>>>>>>>>>>>>>>
+}
+
+@media (min-width: 1200px) {
+
+  .cooperation {
+    padding-bottom: 8.1rem;
+    .row:last-of-type [class*=col-]:first-of-type {
+      max-width: 50%;
+    }
+
+    .row:first-of-type {
+      margin-bottom: 4.1rem;
+    }
+  }
+  .cooperation__title {
+    padding: 0 10rem;
+  }
+
+  .cooperation__image-container {
+    width: 453px;
+    height: 473px;
+  }
+
+  .cooperation__slider-container {
+    width: 453px;
+  }
+
+  .cooperation__slider-count {
+    width: 14.4%;
+  }
+
+  .cooperation__card {
+    margin-bottom: 4.4rem;
+    &:last-of-type {
+      margin-bottom: 3.7rem;
+    }
+  }
+
+  .cooperation__card-text {
+    margin-bottom: 1.4rem;
+  }
+
+  .cooperation__card-btn {
+    width: 19.825rem;
+  }
+}

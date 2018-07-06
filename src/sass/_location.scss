@@ -137,3 +137,65 @@
 }
 
 // END MAP
+
+@media (min-width: 768px) {
+  .location {
+    padding-top: 5.6rem;
+  }
+
+  .location__title {
+    font-size: pxToRem(31px);
+    margin-bottom: 1rem;
+  }
+
+  .location__subtitle {
+    font-size: pxToRem(22px);
+    line-height: pxToRem(28px);
+    padding: 0 6rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .map-col {
+    margin-top: .7rem;
+  }
+
+  .location__map-container {
+    padding: 0 .7rem;
+  }
+
+  .section-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location__map iframe {
+    height: 361px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .location {
+    padding-top: 7.7rem;
+    .row {
+      width: 58.8rem;
+      margin: auto;
+    }
+  }
+
+  .location__subtitle {
+    padding: 0 16rem;
+    margin-bottom: 2.9rem;
+  }
+
+  .location__left-text {
+    padding-right: 1rem;
+  }
+
+  .location__left-geolocation-text {
+    padding-right: 1rem;
+  }
+
+  .location__left-geolocation {
+    margin-bottom: .8rem;
+  }
+}

@@ -63,3 +63,131 @@
 
   }
 }
+
+@media (min-width: 768px) {
+  .portfolio {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      top: 27rem;
+      left: 37%;
+      transform: translateX(-50%);
+    }
+
+    .owl-dot {
+      height: 1px;
+      background-color: #e3e3e3;
+      width: pxToRem(86px);
+      &.active {
+        background-color: #363636;
+      }
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 27.1rem;
+      left: 91.2%;
+      transform: translateX(-50%);
+      div {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill:  #38373e;
+        &:hover {
+          fill: #fa5b3c;
+        }
+      }
+    }
+
+    .owl-prev {
+      margin-right: 3.3rem;
+
+    }
+  }
+
+  .discounts {
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -2.8rem;
+      left: 81%;
+      transform: translateX(-50%);
+      div {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill:  #38373e;
+        &:hover {
+          fill: #fa5b3c;
+        }
+      }
+    }
+
+    .owl-prev {
+      margin-right: 3.3rem;
+
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .cooperation {
+    .owl-dots {
+      width: 85.6%!important;
+    }
+    .owl-dot {
+      width: pxToRem(108px);
+    }
+  }
+
+  .portfolio {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      top: 31.7rem;
+      left: 60%;
+      transform: translateX(-50%);
+    }
+
+    .owl-dot {
+      height: 1px;
+      background-color: #e3e3e3;
+      width: pxToRem(86px);
+      &.active {
+        background-color: #363636;
+      }
+    }
+
+    .owl-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 32rem;
+      left: 96.1%;
+      transform: translateX(-50%);
+      div {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill:  #38373e;
+        &:hover {
+          fill: #fa5b3c;
+        }
+      }
+    }
+
+    .owl-prev {
+      margin-right: 3.3rem;
+
+    }
+  }
+}

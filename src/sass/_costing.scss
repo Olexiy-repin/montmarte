@@ -62,3 +62,71 @@
   background-color: #38373e;
 }
 //<<<<<<<<<<<<<<<<< END COSTING CARDS >>>>>>>>>>>>>>>>
+
+@media (min-width: 768px) {
+  .costing {
+    padding-top: 3.8rem;
+  }
+
+  .costing__title {
+    margin-bottom: 1.4rem;
+  }
+
+  .costing__title {
+    font-size: pxToRem(31px);
+  }
+
+  .costin__subtitle {
+    font-size: pxToRem(22px);
+  }
+
+  .costing__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: pxToRem(578px);
+    margin: auto;
+  }
+
+  .costing__card {
+    width: 50%;
+  }
+
+  .costin__subtitle {
+    margin-bottom: 2.8rem;
+  }
+
+  .costing__card {
+    padding: 2.9rem 0 0 2.2rem;
+    height: 12.2rem;
+  }
+
+  .costing__card-title {
+    margin-bottom: .8rem;
+  }
+
+  .costing__cart-text {
+    line-height: pxToRem(23px);
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .costing {
+    padding-top: 9.7rem;
+  }
+
+  .costin__subtitle {
+    padding: 0 7.6rem;
+  }
+
+  .costing__card-container {
+    width: pxToRem(888px);
+    justify-content: space-between;
+  }
+
+  .costing__card {
+    width: 24%;
+    height: 14.8rem;
+    padding-left: 1.2rem;
+  }
+}

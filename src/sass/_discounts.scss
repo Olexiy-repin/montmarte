@@ -33,3 +33,35 @@
   line-height: pxToRem(28px);
   color: #38373e;
 }
+
+@media (min-width: 768px) {
+  .discounts {
+    padding-top: 8.6rem;
+    padding-bottom: 6.7rem;
+  }
+
+  .discounts__title {
+    padding-left: 5.2rem;
+  }
+
+  .discounts__subtitle {
+    padding-left: 5.2rem;
+  }
+
+  .discounts__slider-container {
+    padding-left: 3.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+
+
+  .discounts__subtitle,
+  .discounts__title {
+    padding-left: 0;
+  }
+
+  .discounts__subtitle {
+    padding-right: 1rem;
+  }
+}

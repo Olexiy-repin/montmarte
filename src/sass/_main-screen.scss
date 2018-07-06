@@ -36,6 +36,30 @@
   text-decoration: none;
   margin-top: 1.1rem;
 }
+
+.main-screen-header .geolocation {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-family: FuturaF;
+  font-size: pxToRem(13px);
+  line-height: pxToRem(19px);
+  padding-left: 2rem;
+  span {
+    opacity: .5;
+    &:hover {
+      transition: all .5s linear;
+      opacity: 1;
+    }
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: url("img/main-screen/geo.png");
+  }
+}
 //<<<<<<<<<<<<<<<<< END HEADER >>>>>>>>>>>>>>>>
 
 // <<<<<<<<<<<<<<<<< RIGHT BLOCK >>>>>>>>>>>>>>>>
@@ -63,6 +87,7 @@
   text-align: center;
   margin-bottom: 3.1rem;
 }
+// <<<<<<<<<<<<<<<<< END RIGHT BLOCK >>>>>>>>>>>>>>>>
 
 // <<<<<<<<<<<<<<<<< FORM >>>>>>>>>>>>>>>>
 .main-screen__form {
@@ -141,3 +166,148 @@
 }
 // <<<<<<<<<<<<<<<<< END FORM >>>>>>>>>>>>>>>>
 // <<<<<<<<<<<<<<<<< END RIGHT BLOCK >>>>>>>>>>>>>>>>
+@media (max-width: 767px) {
+  .main-screen-header .geolocation {
+    position: absolute;
+    top: 5.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .left-block {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-screen {
+    background-image: url("img/main-screen/main-screen-bg-md.png");
+    background-size: auto;
+    background-position-x: 0;
+    padding-bottom: 4.4rem;
+  }
+
+  //<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>
+  .main-screen-header {
+    margin-bottom: 5.2rem;
+  }
+
+  .logo-container {
+    padding: 1.6rem 3.2rem;
+  }
+
+  .call-back-btn {
+    margin-top: 0;
+    padding: .8rem 1.2rem;
+  }
+  //<<<<<<<<<<<<<<<<< END HEADER >>>>>>>>>>>>>>>>
+
+  // <<<<<<<<<<<<<<<<< LEFT BLOCK >>>>>>>>>>>>>>>>
+  .left-block {
+    padding-top: 1.8rem;
+    padding-right: 4.4rem;
+    &::after {
+      display: block;
+      content: "";
+      border: 1px solid #38373e;
+      width: 213px;
+      margin-top: .9rem;
+    }
+  }
+
+  .left-block__content {
+    font-family: FuturaL;
+    font-size: pxToRem(15px);
+    color: #161616;
+    line-height: pxToRem(22px);
+  }
+  // <<<<<<<<<<<<<<<<< END LEFT BLOCK >>>>>>>>>>>>>>>>
+
+  // <<<<<<<<<<<<<<<<< RIGHT BLOCK >>>>>>>>>>>>>>>>
+  .right-block__title-span {
+    font-size: pxToRem(25px);
+    margin-top: .7rem;
+    letter-spacing: 0px;
+  }
+
+  .right-block__title {
+    margin-bottom: .5rem;
+  }
+
+  .right-block__description {
+    margin-bottom: 3.7rem;
+  }
+  // <<<<<<<<<<<<<<<<< END RIGHT BLOCK >>>>>>>>>>>>>>>>
+}
+
+@media (min-width: 1200px) {
+  .main-screen {
+    background-image: url("img/main-screen/main-screen-bg-lg.png");
+    background-size: cover;
+    padding-bottom: 4.2rem;
+    .container--width {
+      max-width: 100%;
+    }
+  }
+  // <<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>
+  .main-screen-header {
+    margin-bottom: 1rem;
+  }
+
+  .logo-container {
+    padding: 1.6rem 2.5rem;
+  }
+
+  .call-back-btn {
+    padding: .8rem 3.1rem;
+  }
+
+  .main-screen-header .geolocation {
+    margin-left: 21.7rem;
+  }
+  // <<<<<<<<<<<<<<<<< END HEADER >>>>>>>>>>>>>>>>
+
+  // <<<<<<<<<<<<<<<<< LEFT BLOCK >>>>>>>>>>>>>>>>
+  .left-block {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 0;
+    padding-right: 3.1rem;
+    &::after {
+      width: 173px;
+      margin-top: .4rem;
+      margin-right: 2.1rem;
+    }
+  }
+
+  .left-block__content {
+    width: pxToRem(209px);
+    padding-right: 1.8rem;
+  }
+  // <<<<<<<<<<<<<<<<< END LEFT BLOCK >>>>>>>>>>>>>>>>
+
+  // <<<<<<<<<<<<<<<<< RIGHT BLOCK >>>>>>>>>>>>>>>>
+  .right-block {
+    padding-top: 1.8rem;
+  }
+
+  .right-block__title-span {
+    font-size: pxToRem(31px);
+    margin-top: .4rem;
+  }
+
+  .right-block__description {
+    letter-spacing: 1.2px;
+    margin-bottom: 1.3rem;
+  }
+
+  .main-screen .form-container {
+    outline: 2px solid #fff;
+    width: pxToRem(433px);
+    margin: auto;
+    padding-top: 2.9rem;
+    padding-bottom: 1.9rem;
+  }
+  // <<<<<<<<<<<<<<<<< END RIGHT BLOCK >>>>>>>>>>>>>>>>
+}

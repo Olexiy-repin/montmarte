@@ -50,3 +50,119 @@
   }
 
 }
+
+@media (max-width: 767px) {
+  .footer__middle-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer__geolocation {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__mobile-footer {
+    display: none;
+  }
+
+  .footer {
+    background-color: #38373e;
+    position: relative;
+    padding-bottom:   .5rem;
+    overflow: hidden;
+    padding-top: .7rem;
+    .call-back-btn {
+      margin-top: 0;
+      width: 13rem;
+      padding: .8rem 0;
+      text-align: center;
+      display: block;
+    }
+    .row [class*=col-]:last-of-type {
+      padding: 0 10px;
+    }
+  }
+
+  .footer__middle-footer {
+    padding: 0 1.5rem 0 .8rem;
+  }
+
+  .footer__left-col {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__terms-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-items: center;
+  }
+
+  .footer__terms-item {
+    font-family: FuturaL;
+    font-size: pxToRem(12px);
+    color: #fff;
+    letter-spacing: .3px;
+    line-height: pxToRem(19px);
+    display: block;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__logo-container {
+    margin-right: 5.5rem;
+  }
+
+  .footer__terms-content {
+    margin-right: 3.5rem;
+  }
+
+  .footer__right-side {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 1.3rem;
+  }
+
+  .footer .geolocation {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: FuturaF;
+    font-size: pxToRem(13px);
+    line-height: pxToRem(19px);
+    padding-left: 2rem;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: url("img/main-screen/geo.png");
+    }
+  }
+
+  .footer__terms-content {
+    margin-right: 4.3rem;
+  }
+
+  .footer__right-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .footer__right-side {
+    margin-left: 4.8rem;
+  }
+}
