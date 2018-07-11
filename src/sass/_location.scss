@@ -47,6 +47,14 @@
   position: relative;
   margin-bottom: 1rem;
   padding-left: 1.9rem;
+  span {
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+      transition: all .5s linear;
+      opacity: .5;
+    }
+  }
   &:last-of-type {
     margin-bottom: 0;
   }

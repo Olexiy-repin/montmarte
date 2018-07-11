@@ -107,6 +107,11 @@
   width: pxToRem(290px);
   margin: auto;
   padding: .8rem 0;
+  &:hover {
+    transition: all .3s linear;
+    background-color: #38373e;
+    color: #fff;
+  }
 }
 
 .cooperation__description {

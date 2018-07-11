@@ -144,3 +144,18 @@ owlPrev.on('click', function (event) {
      }
   });
 })();
+
+(() => {
+  let street26 = $('.location__left-geolocation-text:first-of-type span');
+  let street6 = $('.location__left-geolocation-text:last-of-type span');
+
+  street6.on('click', function () {
+    $('.location__map iframe').detach();
+    $('.location__map').append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2223.292003500938!2d47.29187431631474!3d56.13476298065723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a37744f5df5c1%3A0xa73446645e6cfb6!2z0KfRg9Cy0LDRiNCz0L7RgdGB0L3QsNCx!5e0!3m2!1sru!2sua!4v1531317122718" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>');
+  });
+
+  street26.on('click', function () {
+    $('.location__map iframe').detach();
+    $('.location__map').append('<iframe id="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2228.615629877486!2d47.30225861631197!3d56.04264378063192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415a4a191225afb1%3A0xc1ab41f5a15add8!2z0YPQuy4g0JzQsNC60YHQuNC80LAg0JPQvtGA0YzQutC-0LPQviwgMjYsINCa0YPQs9C10YHQuCwg0KfRg9Cy0LDRiNGB0LrQsNGPINCg0LXRgdC_Liwg0KDQvtGB0YHQuNGPLCA0Mjk1MDA!5e0!3m2!1sru!2sua!4v1530807548757" frameborder="0" allowfullscreen></iframe>');
+  });
+})();

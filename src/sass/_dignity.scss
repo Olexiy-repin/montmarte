@@ -27,6 +27,25 @@
 
 .dignity__picture {
   display: block;
+  position: relative;
+  &:hover {
+    &::before {
+      transition: all .5s linear;
+      transform: translate(-50%,-50%) scale(.9);
+    }
+  }
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    content: url("img/dignity/play-btn.png");
+    cursor: pointer;
+    fill: #fa5b3c;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .dignity__default-img {
@@ -140,6 +159,14 @@
 @media (min-width: 768px) {
   .dignity {
     padding-top: 5.7rem;
+  }
+
+  .dignity__picture {
+    &::before {
+      content: url("img/dignity/plat-md-btn.png");
+      width: 65px;
+      height: 65px;
+    }
   }
 
   .dignity__title {

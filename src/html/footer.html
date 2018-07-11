@@ -5,7 +5,10 @@
         <div class="col-6">
           <div class="footer__left-side">
             <div class="footer__logo-container">
-              <img src="img/footer/logo.png" alt="" class="footer__logo-img">
+              <svg class="main-screen__logo-svg">
+                <use xlink:href="img/main-screen/logo-sprite.svg#logow"></use>
+              </svg>
+              <!-- <img src="img/footer/logo.png" alt="" class="footer__logo-img"> -->
             </div>
           </div>
         </div>
@@ -34,11 +37,14 @@
       <div class="col-md-8 col-xl-6">
         <div class="footer__left-col">
           <div class="footer__logo-container">
-            <picture class="footer__picture">
+            <!-- <picture class="footer__picture">
               <source srcset="img/footer/logo-md.png" media="(min-width:768px)">
               <source srcset="img/footer/logo.png" media="(min-width:320px)">
                 <img src="img/footer/logo.png" alt="" class="footer__logo-img">
-            </picture>
+            </picture> -->
+            <svg class="main-screen__logo-svg">
+              <use xlink:href="img/main-screen/logo-sprite.svg#logow"></use>
+            </svg>
           </div>
           <div class="footer__terms-container">
             <div class="footer__terms-content">
@@ -57,7 +63,7 @@
       <div class="col-md-4 col-xl-6">
         <div class="footer__right-col">
           <div class="footer__geolocation">
-            <a href="#" class="geolocation">Чебоксары и <br> Чувашская республика</a>
+            <a href="#location" class="geolocation">Чебоксары и <br> Чувашская республика</a>
           </div>
           <div class="footer__right-side">
             <a href="#" class="call-back-btn">Перезвоните мне</a>

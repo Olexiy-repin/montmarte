@@ -167,6 +167,11 @@
   cursor: pointer;
   transition: all .3s linear;
   margin-bottom: 2.4rem;
+  &:hover {
+    transition: all .3s linear;
+    background-color: #fff;
+    color: #38373e;
+  }
 }
 
 .main-screen__form-description {
@@ -184,6 +189,7 @@
     left: 50%;
     transform: translateX(-50%);
     padding-left: 1.7rem;
+    width: 16rem;
     &::before {
       top: 50%;
       transform: translateY(-50%);
@@ -207,6 +213,11 @@
     background-size: auto;
     background-position-x: 0;
     padding-bottom: 4.4rem;
+  }
+
+  .main-screen__logo-svg {
+    width: 141px;
+    height: 36px;
   }
 
   //<<<<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>>>

@@ -72,6 +72,11 @@
   .feedback .main-screen__form-btn {
     margin: 0;
     width: pxToRem(235px);
+    &:hover {
+      transition: all .3s linear;
+      background-color: #38373e;
+      color: #fff;
+    }
   }
 
   .feedback__form-title {
