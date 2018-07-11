@@ -51,6 +51,8 @@
 }
 
 .cooperation__slider-count {
+  font-family: FuturaF;
+  font-size: pxToRem(13px);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -115,6 +117,17 @@
   padding: 0 .8rem;
 }
 //<<<<<<<<<<<<<<<<< END COOPERATION CARD >>>>>>>>>>>>>>>>
+
+@media (max-width: 767px) {
+  .cooperation__subtitle {
+    br {
+      content: "";
+      &::after {
+        content: "\00a0";
+      }
+    }
+  }
+}
 
 @media (min-width: 768px) {
   .cooperation {

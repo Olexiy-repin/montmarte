@@ -6,6 +6,8 @@
    loop: true,
 
    autoHeight : false,
+   autoplay: true,
+   autoplayTimeout: 4000,
 
    margin : 5,
    nav: false,
@@ -36,6 +38,8 @@ $(".cooperation__slider").on('changed.owl.carousel', function (event) {
    loop: true,
 
    autoHeight : false,
+   autoplay: true,
+   autoplayTimeout: 4000,
 
    margin : 5,
    nav: true,
@@ -111,7 +115,7 @@ owlPrev.on('click', function (event) {
        768:{
          nav: true
        },
-       1336:{
+       1200:{
            items:3,
            nav: true,
            margin: 30
@@ -124,6 +128,11 @@ owlPrev.on('click', function (event) {
   $('.plaster-type__more-btn').on('click', function () {
     let browserWidth = document.documentElement.clientWidth;
 
+    if ($('.plaster-type__more-btn').text() == 'СКРЫТЬ') {
+      $('.plaster-type__more-btn').text('ПОСМОТРЕТЬ ВСЕ');
+    } else {
+      $('.plaster-type__more-btn').text('СКРЫТЬ');
+    }
 	   if (browserWidth >= 768) {
        let cards = $('.plaster-type__card:nth-of-type(n+7)');
 

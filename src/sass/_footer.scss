@@ -109,6 +109,11 @@
     letter-spacing: .3px;
     line-height: pxToRem(19px);
     display: block;
+    cursor: pointer;
+    &:hover {
+      transition: all .5s linear;
+      color: #ad9771;
+    }
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -143,6 +148,10 @@
     font-size: pxToRem(13px);
     line-height: pxToRem(19px);
     padding-left: 2rem;
+    &:hover {
+      transition: all .5s linear;
+      opacity: .5;
+    }
     &::before {
       position: absolute;
       top: 0;

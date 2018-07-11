@@ -3,7 +3,7 @@
   padding-bottom: 5.7rem;
   overflow: hidden;
   background-image: url("img/discounts/discounts-bg.png");
-  background-position: top;
+  background-position: 40% 0;;
   background-size: cover;
   background-repeat: no-repeat;
   .row {
@@ -38,6 +38,7 @@
   .discounts {
     padding-top: 8.6rem;
     padding-bottom: 6.7rem;
+    background-position: top;
   }
 
   .discounts__title {
