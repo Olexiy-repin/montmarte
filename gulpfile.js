@@ -14,9 +14,9 @@ var uglify = require('gulp-uglify-es').default;
 gulp.task('html', function(){
   return gulp.src('./src/html/index.html')
     .pipe(rigger())
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
+    // .pipe(htmlmin({
+    //   collapseWhitespace: true
+    // }))
     .pipe(gulp.dest('./dist'))
       .pipe(browserSync.reload({
         stream: true
@@ -47,7 +47,7 @@ gulp.task('css', function(){
     .pipe(mmq({
       log: true
     }))
-    .pipe(cssnano())
+    // .pipe(cssnano())
     .pipe(gulp.dest('./dist'))
       .pipe(browserSync.reload({
         stream: true

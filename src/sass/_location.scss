@@ -47,6 +47,19 @@
   position: relative;
   margin-bottom: 1rem;
   padding-left: 1.9rem;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #38373e;
+    &:hover {
+      transition: all .5s linear;
+      opacity: .5;
+    }
+  }
   span {
     display: inline-block;
     cursor: pointer;
@@ -58,13 +71,6 @@
   &:last-of-type {
     margin-bottom: 0;
   }
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    content: url("img/location/geo.png");
-  }
 }
 
 .location__left-social {
@@ -75,40 +81,17 @@
   position: relative;
   padding-left: 1.9rem;
   margin-bottom: .8rem;
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   a {
     text-decoration: none;
     color: #38373e;
     &:hover {
       transition: all .5s linear;
       opacity: .5;
-    }
-  }
-  &:first-of-type {
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      content: url("img/location/mail.png");
-    }
-  }
-  &:nth-of-type(2) {
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      content: url("img/location/insta.png");
-    }
-  }
-  &:last-of-type {
-    margin-bottom: 0;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      content: url("img/location/facebook.png");
     }
   }
 }

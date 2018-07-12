@@ -31,6 +31,24 @@ $(".cooperation__slider").on('changed.owl.carousel', function (event) {
 })();
 
 (() => {
+  $(".partners__slider").owlCarousel({
+   items : 3,
+   itemsCustom : true,
+
+   loop: true,
+
+   autoHeight : false,
+   autoplay: true,
+   autoplayTimeout: 4000,
+
+   margin : 5,
+   nav: false,
+   navText: ["",""],
+   dots: false,
+  });
+})();
+
+(() => {
   $(".portfolio__slider").owlCarousel({
    items : 1,
    itemsCustom : true,
@@ -40,6 +58,7 @@ $(".cooperation__slider").on('changed.owl.carousel', function (event) {
    autoHeight : false,
    autoplay: true,
    autoplayTimeout: 4000,
+   autoplayHoverPause: false,
 
    margin : 5,
    nav: true,
